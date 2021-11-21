@@ -1,0 +1,57 @@
+.wrapper{
+    background: rgb(164, 231, 228);
+    }
+    
+    h1{
+    text-align: center;
+    background: rgb(164, 165, 231);
+    }
+    
+    ul{
+    text-align: center;
+    }
+    
+    li{
+        display: inline-block;
+    }
+    
+    .game{
+        width: 350px;
+    }
+    
+    .block{
+        display: inline-block;
+        background: rgb(164, 165, 231);
+        width:100px;
+        height: 100px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    .navigacija{
+        
+        overflow: hidden;
+    }
+    .navigacija a{
+        float: left;
+        color: #deeaee;
+        text-decoration: none;
+        display: block; 
+        text-align: center;
+        padding: 10px 12px;
+        background-color: #644d60;
+      }
+      .navigacija a:hover{
+        background-color:rgb(164, 231, 228);
+        color: black;
+      }
+      #navigacijai{
+        float: right;
+        display: block;
+        width:100px;
+        height: 40px; 
+      }
+      .footer{
+        display: inline-block;
+        width: 300px;
+        font-size: 20px;
+        font-family: 'Akaya Telivigala', cursive;
+      }
