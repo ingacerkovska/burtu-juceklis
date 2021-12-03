@@ -1,66 +1,68 @@
 .wrapper{
-    background: rgb(38,36,75);
-    }
+  background: rgb(38,36,75);
+}
     
-    h1{
+h1{ 
+  text-align: center;
+  background: rgb(164, 165, 231);
+}
+a{
+  color:black;
+  text-decoration: none;
+}
     
-    text-align: center;
-    background: rgb(164, 165, 231);
-    }
-    a{
-      color:black;
-      text-decoration: none;
-    }
+ul{
+  text-align: center;
+}
     
-    ul{
-    text-align: center;
-    }
+li{
+  display: inline-block;
+}
     
-    li{
-        display: inline-block;
-    }
+.game{
+  width: 350px;
+  text-align: center;
+	margin-left: auto; 
+	margin-right: auto;  
+}
+.content{
+  color: rgb(222,148,54);
+}
     
-    .game{
-        width: 350px;
-    }
-    p{
-      color: rgb(222,148,54);
-    }
-    
-    .block{
-        display: inline-block;
-        background: rgb(164, 165, 231);
-        width:50px;
-        height: 50px;
-        border: 1px solid rgb(255, 255, 255);
-    }
-    .navigacija{
+.block{
+  display: inline-block;
+  background: rgb(164, 165, 231);
+  width:50px;
+  height: 50px;
+  border: 1px solid rgb(255, 255, 255);
+}
+.navigacija{
         
-        overflow: hidden;
-    }
-    .navigacija a{
-        float: left;
-        color: #deeaee;
-        text-decoration: none;
-        display: block; 
-        text-align: center;
-        padding: 10px 12px;
-        background-color: #644d60;
-      }
-      .navigacija a:hover{
-        background-color:rgb(164, 165, 231);
-        color: black;
-      }
-      #navigacijai{
-        float: right;
-        display: block;
-        width:100px;
-        height: 40px; 
-      }
-      .footer{
-        color: white;
-        display: inline-block;
-        width: 300px;
-        font-size: 20px;
-        font-family: 'Akaya Telivigala', cursive;
-      }
+  overflow: hidden;
+}
+.navigacija a{
+  float: left;
+  color: #deeaee;
+  text-decoration: none;
+  display: block; 
+  text-align: center;
+  padding: 10px 12px;
+  background-color: #644d60;
+}
+.navigacija a:hover{
+  background-color:rgb(164, 165, 231);
+  color: black;
+}
+#navigacijai{
+  float: right;
+  display: block;
+  width:100px;
+  height: 40px; 
+}
+.footer{
+  color: white;
+  display: inline-block;
+  width: 300px;
+  font-size: 20px;
+  font-family: 'Akaya Telivigala', cursive;
+}

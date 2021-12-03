@@ -32,15 +32,20 @@
         </ul>
     </div><!--beidzās headers-->
     <div class="content">
-        <p>Spied pogu "Spēle" un veido no burtiem vārdus</p>
-        <div class="game">
-            <div class="block">😱</div>
-            <div class="block">😍</div>
-            <div class="block">🤓</div>
-            <div class="block">😍</div>
-            <div class="block">😱</div>
-            <div class="block">🤓</div>
-        </div>
+        <h3>Aizpildi tukšos lodziņus, spied pogu "Sākt" un veido no burtiem vārdus</h3>
+        Vārds: <input id='vards'/>
+        <br/>
+        Vecums: <input id='vecums'/>
+        <br/>
+        Reģions: 
+        <select id="regions">
+            <option valie="vidzeme">Vidzeme</option>
+            <option value="kurzeme">Kurzeme</option>
+            <option value="latgale">Latgale</option>
+            <option value="zemgale">Zemgale</option>
+        </select>
+        <br/>
+        <button onclick="saktSpeli()">Sākt</button>
 
     </div>
     <div >
@@ -57,8 +62,24 @@
     
     </div>
 </div> <!--beidzas wrapper-->
+<script>
+     function saktSpeli() 
+    {
+        let vards = document.querySelector('#vards').value 
+        let vecums = document.querySelector('#vecums').value 
+        let regions = document.querySelector('#regions').value 
+        console.log(vards)
 
-
+        if (vards=='')
+        {
+            alert('Ievadi vārdu!')
+        }
+        else
+        {
+            window.location='spele.html#'+vards+','+vecums+','+regions
+        }
+    }
+</script>
 
 </body>
 </html>
