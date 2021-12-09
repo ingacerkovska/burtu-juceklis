@@ -34,14 +34,17 @@
     <div class="content">
         <p>Raksti vārdu, ko vari salikt no visiem šiem burtiem</p>
         <div class="game">
-            <div class="block">S</div>
-            <div class="block">S</div>
-            <div class="block">L</div>
-            <div class="block">E</div>
-            <div class="block">E</div>
-            <div class="block">P</div>
+            <div class="block" id="B0" onclick="izvelasBurtu('B0')">S</div>
+            <div class="block" id="B1"onclick="izvelasBurtu('B1')">S</div>
+            <div class="block" id="B2" onclick="izvelasBurtu('B2')">L</div>
+            <div class="block" id="B3" onclick="izvelasBurtu('B3')">Ē</div>
+            <div class="block" id="B4" onclick="izvelasBurtu('B4')">E</div>
+            <div class="block" id="B5" onclick="izvelasBurtu('B5')">P</div>
         </div>
-
+        <br>
+        <div class="ievaditaisVards"></div>
+        <br>
+        <button onclick="parbaudit()">Pārbaudīt atbildi</button>
     </div>
     <div >
         <hr/>
@@ -59,7 +62,13 @@
 </div> <!--beidzas wrapper-->
 
 <script>
-
+let laukumuSaturs=['S','S','L','Ē','E','P']
+let nospiestaisLaukums=[]
+function izvelasBurtu(burts){
+    if (nospiestaisLaukums.indexOf(burts)==-1){
+        document.querySelector('.ievaditaisVards').innerHTML=laukumuSaturs[0]
+    }
+}  
 </script>
 
 </body>
