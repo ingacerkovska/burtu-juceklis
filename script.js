@@ -1,3 +1,61 @@
+
+let laukumuSaturs=['SPĒLES','SAPNIS','LAIMES','KĀPURS','EGLĪTE','PANNAS']
+let nospiestaisLaukums=[]
+function izvelasBurtu(burts){
+    if (nospiestaisLaukums.indexOf(burts)==-1){
+        document.querySelector('.ievaditaisVards').innerHTML=laukumuSaturs[randomNr]
+    }
+}  
+function izveletiesVardu()
+{
+    randomNr = Math.random() * 10
+    randomNr =  Math.ceil( randomNr )
+    randomNr = randomNr-1
+
+    document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])  + ', '+randomNr
+
+    document.querySelector('.ievaditaisVards').value = ''
+}
+
+izveletiesVardu()
+function parbaudit(){
+    let ievaditaisVards = document.querySelector('.ievaditaisVards').value
+
+        if( ievaditaisVards == laukumuSaturs[randomNr] )
+        {
+            alert('Pareizi! ')
+            izveletiesVardu()
+        }
+        else
+        {
+            alert('Nepareizi!')
+        }
+}
+function sajauktVardu(vards)
+{
+
+    let vardsIzjauksanai = vards.split('')
+
+    let vardaGarums = vards.length
+    let loopIndex = 0
+    let sajauktsVards = []
+
+    while( loopIndex != vardaGarums )
+    {
+
+        let randomIndex = Math.floor( Math.random() * vardsIzjauksanai.length )
+
+        sajauktsVards.push(vardsIzjauksanai[randomIndex])
+        vardsIzjauksanai.splice(randomIndex,1)
+
+        loopIndex++
+    }
+
+    sajauktsVards = sajauktsVards.join('')
+
+    return sajauktsVards
+
+}
 function saktSpeli() 
 {
     let vards = document.querySelector('#vards').value 
@@ -13,16 +71,4 @@ function saktSpeli()
     {
         window.location='spele.html#'+vards+','+vecums+','+regions
     }
-}
-let laukumuSaturs=['S','S','L','Ē','E','P']
-let nospiestaisLaukums=[]
-function izvelasBurtu(burts){
-    if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('.ievaditaisVards').innerHTML=laukumuSaturs[0]+laukumuSaturs[1]
-    }
-}  
-function parbaudit(){
-    if ('.ievaditaisVards'=='SPĒLES'){
-        alert('Pareizi!')
-    } else {alert('Nepareizi!')}
 }
