@@ -14,14 +14,14 @@ function izveletiesVardu()
 
     document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])  + ', '+randomNr
 
-    document.querySelector('.ievaditaisVards').value = ''
+    document.querySelector('.atbilde').value = ''
 }
 
 izveletiesVardu()
 function parbaudit(){
-    let ievaditaisVards = document.querySelector('.ievaditaisVards').value
+    let atbilde = document.querySelector('.atbilde').value
 
-        if( ievaditaisVards == laukumuSaturs[randomNr] )
+        if( atbilde == laukumuSaturs[randomNr] )
         {
             alert('Pareizi! ')
             izveletiesVardu()
