@@ -13,6 +13,8 @@ function izveletiesVardu()
     randomNr = randomNr-1
 
     document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])  + ', '+randomNr
+    
+    
 
     document.querySelector('.atbilde').value = ''
 }
@@ -56,6 +58,15 @@ function sajauktVardu(vards)
     return sajauktsVards
 
 }
+function sadalitVardu(vardins)
+{
+    let vardinsSadalisanai =vardins.split('')
+    let vardinaGarums = vardins.length
+    let loopIndex = 0
+    let sadalitsVards = []
+   // document.querySelector("#B0").innerHTML=sajauktVardu(sadalitsVards[0])
+}
+
 function saktSpeli() 
 {
     let vards = document.querySelector('#vards').value 
