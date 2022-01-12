@@ -62,10 +62,21 @@ function sadalitVardu(vardins)
 {
     let vardinsSadalisanai =vardins.split('')
     let vardinaGarums = vardins.length
-    let loopIndex = 0
+    let vardaIndex = 0
     let sadalitsVards = []
-   // document.querySelector("#B0").innerHTML=sajauktVardu(sadalitsVards[0])
-}
+    while( vardaIndex != vardinaGarums )
+    {
+
+        let randomIndeks = Math.floor( Math.random() * vardinsSadalisanai.length )
+
+        sadalitsVards.push(vardinsSadalisanai[randomIndeks])
+        vardinsSadalisanai.splice(randomIndeks,1)
+
+        vardaIndex++
+    }
+  
+} 
+document.querySelector("#B0").innerHTML=sadalitsVards[0]
 
 function saktSpeli() 
 {
