@@ -60,9 +60,10 @@ function sadalitVardu(vardins)
 
         vardaIndex++
     }
+    
   
 } 
-document.querySelector("#B0").innerHTML= sadalitsVards[0]
+//document.querySelector("#B0").innerHTML= sadalitsVards[0]
 
 function saktSpeli() 
 {
