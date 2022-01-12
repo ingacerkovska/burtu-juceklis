@@ -14,25 +14,11 @@ function izveletiesVardu()
 
     document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])  + ', '+randomNr
     
-    
-
-    document.querySelector('.atbilde').value = ''
+   // document.querySelector('.atbilde').value = ''
 }
 
 izveletiesVardu()
-function parbaudit(){
-    let atbilde = document.querySelector('.atbilde').value
 
-        if( atbilde == laukumuSaturs[randomNr] )
-        {
-            alert('Pareizi! ')
-            izveletiesVardu()
-        }
-        else
-        {
-            alert('Nepareizi!')
-        }
-}
 function sajauktVardu(vards)
 {
 
