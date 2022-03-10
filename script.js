@@ -2,9 +2,32 @@
 let laukumuSaturs=['SPĒLES','SAPNIS','LAIMES','KĀPURS','EGLĪTE','PANNAS']
 let nospiestaisLaukums=[]
 function izvelasBurtu(burts){
+
     if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('.ievaditaisVards').innerHTML=laukumuSaturs[randomNr]
-    }
+        document.querySelector('#B0').innerHTML=burts
+        
+    } 
+    if (nospiestaisLaukums.indexOf(burts)==-1){
+        document.querySelector('#B1').innerHTML=burts
+        
+    }  
+    if (nospiestaisLaukums.indexOf(burts)==-1){
+        document.querySelector('#B2').innerHTML=burts
+        
+    } 
+    if (nospiestaisLaukums.indexOf(burts)==-1){
+        document.querySelector('#B3').innerHTML=burts
+        
+    } 
+    if (nospiestaisLaukums.indexOf(burts)==-1){
+        document.querySelector('#B4').innerHTML=burts
+        
+    } 
+    if (nospiestaisLaukums.indexOf(burts)==-1){
+        document.querySelector('#B5').innerHTML=burts
+        
+    } 
+    
 }  
 function izveletiesVardu()
     {
@@ -12,7 +35,7 @@ function izveletiesVardu()
         randomNr =  Math.ceil( randomNr )
         randomNr = randomNr-1
     
-        document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])
+        document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])+' '+randomNr
         
        
     }
