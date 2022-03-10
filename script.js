@@ -12,9 +12,9 @@ function izveletiesVardu()
         randomNr =  Math.ceil( randomNr )
         randomNr = randomNr-1
     
-        document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])  + ', '+randomNr
+        document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])
         
-       // document.querySelector('.atbilde').value = ''
+       
     }
     
 izveletiesVardu()
@@ -35,34 +35,21 @@ function sajauktVardu(vards)
 
         sajauktsVards.push(vardsIzjauksanai[randomIndex])
         vardsIzjauksanai.splice(randomIndex,1)
-
+        document.querySelector("#b0").innerHTML= sajauktsVards[0]
+        document.querySelector("#b1").innerHTML= sajauktsVards[1]
+        document.querySelector("#b2").innerHTML= sajauktsVards[2]
+        document.querySelector("#b3").innerHTML= sajauktsVards[3]
+        document.querySelector("#b4").innerHTML= sajauktsVards[4]
+        document.querySelector("#b5").innerHTML= sajauktsVards[5]
         loopIndex++
     }
-
-    sajauktsVards = sajauktsVards.join('')
+   
+   // sajauktsVards = sajauktsVards.join('')
 
     return sajauktsVards
 
 }
-function sadalitVardu(vardins)
-{
-    let vardinsSadalisanai =vardins.split('')
-    let vardinaGarums = vardins.length
-    let vardaIndex = 0
-    let sadalitsVards = []
-    while( vardaIndex != vardinaGarums )
-    {
 
-        let randomIndeks = Math.floor( Math.random() * vardinsSadalisanai.length )
-
-        sadalitsVards.push(vardinsSadalisanai[randomIndeks])
-        vardinsSadalisanai.splice(randomIndeks,1)
-
-        vardaIndex++
-    }
-    
- 
-} document.querySelector("#b0").innerHTML= sadalitVardu(sadalitsVards[0])
 
 
 function saktSpeli() 
