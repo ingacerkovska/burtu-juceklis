@@ -2,29 +2,16 @@
 let laukumuSaturs=['SPĒLES','SAPNIS','LAIMES','KĀPURS','EGLĪTE','PANNAS']
 let nospiestaisLaukums=[]
 function izvelasBurtu(burts){
+    let saturs0 = document.querySelector('#b0').value
+    /*let saturs1 = document.querySelector('#b1').value
+    let saturs2 = document.querySelector('#b2').value */
 
     if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('#B0').innerHTML=burts
+        document.querySelector('#B0').innerHTML=saturs0
         
     } 
-  /*  if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('#B1').innerHTML=burts
-        
-    }  
-    if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('#B2').innerHTML=burts
-        
-    } 
-    if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('#B3').innerHTML=burts
-        
-    } 
-    if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('#B4').innerHTML=burts
-        
-    } 
-    if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('#B5').innerHTML=burts
+  /* if (nospiestaisLaukums.indexOf(burts)==-1){
+        document.querySelector('#B1').innerHTML=saturs1
         
     } */
     
@@ -90,4 +77,20 @@ function saktSpeli()
     {
         window.location='spele.html#'+vards+','+vecums+','+regions
     }
+
 }
+function parbaudit()
+    {
+        let atbilde = document.querySelector('#B0').value
+
+
+        if( atbilde == laukumuSaturs[randomNr] )
+        {
+            alert('Pareizi! ')
+        
+        }
+        else
+        {
+            alert('Nepareizi!')
+        }
+    }
