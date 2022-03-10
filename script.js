@@ -6,6 +6,19 @@ function izvelasBurtu(burts){
         document.querySelector('.ievaditaisVards').innerHTML=laukumuSaturs[randomNr]
     }
 }  
+function izveletiesVardu()
+    {
+        randomNr = Math.random() * 10
+        randomNr =  Math.ceil( randomNr )
+        randomNr = randomNr-1
+    
+        document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])  + ', '+randomNr
+        
+       // document.querySelector('.atbilde').value = ''
+    }
+    
+izveletiesVardu()
+
 function sajauktVardu(vards)
 {
 
@@ -29,18 +42,7 @@ function sajauktVardu(vards)
     sajauktsVards = sajauktsVards.join('')
 
     return sajauktsVards
-function izveletiesVardu()
-    {
-        randomNr = Math.random() * 10
-        randomNr =  Math.ceil( randomNr )
-        randomNr = randomNr-1
-    
-        document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])  + ', '+randomNr
-        
-       // document.querySelector('.atbilde').value = ''
-    }
-    
-    izveletiesVardu()
+
 }
 function sadalitVardu(vardins)
 {
@@ -59,9 +61,9 @@ function sadalitVardu(vardins)
         vardaIndex++
     }
     
-  
-} 
-//document.querySelector("#B0").innerHTML= sadalitsVards[0]
+ 
+} document.querySelector("#b0").innerHTML= sadalitVardu(sadalitsVards[0])
+
 
 function saktSpeli() 
 {
