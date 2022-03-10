@@ -7,7 +7,7 @@ function izvelasBurtu(burts){
         document.querySelector('#B0').innerHTML=burts
         
     } 
-    if (nospiestaisLaukums.indexOf(burts)==-1){
+  /*  if (nospiestaisLaukums.indexOf(burts)==-1){
         document.querySelector('#B1').innerHTML=burts
         
     }  
@@ -26,7 +26,7 @@ function izvelasBurtu(burts){
     if (nospiestaisLaukums.indexOf(burts)==-1){
         document.querySelector('#B5').innerHTML=burts
         
-    } 
+    } */
     
 }  
 function izveletiesVardu()
