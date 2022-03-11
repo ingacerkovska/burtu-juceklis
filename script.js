@@ -101,12 +101,9 @@ function parbaudit()
     function skaititLaiku(){
         let m = 0;
         let s = 0;
-        m = checkTime(m);
-        s = checkTime(s);
-        document.getElementById('laiks').innerHTML =   m + ":" + s;
+        m = 
+        s = 
+        document.querySelector('#laiks').innerHTML =   m + ":" + s;
         setTimeout(skaititLaiku, 1000);
     }
-    function checkTime(i) {
-        if (i < 10) {i = "0" + i}; 
-        return i;
-      }
+    
