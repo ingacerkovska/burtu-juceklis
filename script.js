@@ -1,19 +1,21 @@
+let adrese = window.location.hash
+adrese = decodeURI(adrese)
+adrese = adrese.replace('#','')
+adrese = adrese.split(",")
+let vards  = adrese[0]
+document.querySelector('.sveiciens').innerHTML = 'Čau '+vards+'!'
 
 let laukumuSaturs=['SPĒLES','SAPNIS','LAIMES','KĀPURS','EGLĪTE','PANNAS']
 let nospiestaisLaukums=[]
 function izvelasBurtu(burts){
-    let saturs0 = document.querySelector('#b0').value
-    /*let saturs1 = document.querySelector('#b1').value
-    let saturs2 = document.querySelector('#b2').value */
+   // let saturs0 = document.querySelector('#b0').value
+    
 
     if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('#B0').innerHTML=saturs0
+        document.querySelector('#B0').innerHTML= ''
         
     } 
-  /* if (nospiestaisLaukums.indexOf(burts)==-1){
-        document.querySelector('#B1').innerHTML=saturs1
-        
-    } */
+  
     
 }  
 function izveletiesVardu()
@@ -22,7 +24,7 @@ function izveletiesVardu()
         randomNr =  Math.ceil( randomNr )
         randomNr = randomNr-1
     
-        document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])+' '+randomNr
+      document.querySelector(".sajaukts").innerHTML=  sajauktVardu(laukumuSaturs[randomNr])+' '+randomNr
         
        
     }
@@ -54,7 +56,7 @@ function sajauktVardu(vards)
         loopIndex++
     }
    
-   // sajauktsVards = sajauktsVards.join('')
+    sajauktsVards = sajauktsVards.join('')
 
     return sajauktsVards
 
